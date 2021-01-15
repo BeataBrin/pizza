@@ -1,0 +1,150 @@
+@media only screen and (max-width: 1150px) {
+  /**** photo-gallery ****/
+  .photo-segment {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /**** Reference ****/
+  .col.span-1-of-3.one-reference {
+    width: 48.5%;
+    margin-left: 1.5%;
+  }
+
+  .one-reference:nth-child(3) {
+    display: none;
+  }
+
+  .pizza-info img {
+   margin-left: 2%;
+   margin-right: 2%;
+ }
+
+ .pizza-example .span-1-of-2 {
+  width: 48.5;
+ }
+}
+
+@media only screen and (max-width:1025px){
+
+    /**** Mobile navigation ****/ 
+
+    nav ul li{ 
+        display: block;
+    }
+
+    .nav-background {
+        /* display: none; */
+    }
+    .mobile-nav-back {
+        height: 190px;
+        position: fixed;
+        width: 100%;
+        background-color: rgb(252,187,33,0.7);
+        display: none;
+    }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    }
+    
+    nav ul {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+ 
+  /**** Our pizza ****/
+  .pizza-info .span-1-of-2 {
+    width: 96%;
+  }
+
+
+  text-pizza p {
+    padding-top: 12px;
+  }
+
+  .pizza-example img {
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-bottom: 1%;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  /**** our pizza ****/
+  .pizza-info{
+    padding-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /**** photo-gallery ****/
+  .photo-segment .col {
+    margin: 2%;
+  }
+  .photo-segment li {
+    width: 100%;
+  }
+
+  /**** About us ****/
+  .pizza-example span-1-of-2 {
+    width: 96%;
+  }
+
+  .pizza-example .col {
+   margin-left: 0;
+  }
+
+  .pizza-example img {
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-bottom: 1%;
+  }
+}
+
+@media only screen and (max-width: 730px){
+
+ /**** header ****/
+ .header-text h1{
+  text-align: center;
+ }
+
+ .header-text {
+  width: 100%;
+  transform: translate(0%, 0%);
+  left: 0%;
+}
+
+ .btn {
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+ }
+
+ .btn-empty:link,
+ .btn-empty:visited {
+    margin-left: 10px;
+    background: transparent;
+}
+
+
+
+
+}
+
+@media only scren and (max-width: 685px) {
+  /**** Reference ****/
+  .col.span-1-of-3.one-reference {
+    width: 96%;
+    margin-left: 20px;
+  }
+
+  .photo-name {
+    float: right;
+    margin-right: 25px;
+  }
+}

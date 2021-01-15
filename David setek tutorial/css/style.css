@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+/***** reusable ****/
+.row {
+  width: 1140px;
+  margin: 0 auto;
+}
+.heading-main h2 {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+.heading-main h2:after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 2px solid #f9ba21;
+  margin: 20px auto;
+}
+
+.empty-space {
+  height: 50px;
+}
+/**** header ****/
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(5, 4, 3, 0.84),
+      rgba(204, 196, 203, 0.43)
+    ),
+    url("images/pizza.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+   background-attachment: fixed;
+}
+
+.nav-background {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(252, 187, 33, 0.7);
+  z-index: 50;
+}
+
+#logo img {
+  width: 200px;
+  position: absolute;
+  top: 2%;
+}
+nav ul {
+  float: right;
+  margin-top: 10px;
+  position: fixed;
+  margin-left: 39%;
+  z-index: 100;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  transition: border-bottom 0.5s;
+  border-bottom: 2px solid #020202;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+  color: #ffffff;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+}
+
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px groove #f9ba21;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background: #f9ba21;
+  margin-left: 10px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  transition: background 0.5s;
+  background: #aa7d14;
+  border: 1px groove #a07309;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+  margin-left: 5px;
+  background: transparent;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+  transition: 0.5s;
+  background: #f9ba21;
+}
+/* Mobile navigation */
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 10px;
+  display: none;
+}
+
+/**** About us ****/
+
+.pizza-example img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 6px 7px 4px rgb(94, 90, 90), -2px 2px 5px 5px grey;
+}
+
+/**** Pizza info ****/
+
+.pizza-info img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 6px 7px 4px rgb(136, 134, 134), -2px 2px 5px 5px grey;
+  margin-bottom: 60px;
+}
+
+.text-pizza {
+  margin-bottom: 20px;
+}
+
+.text-pizza div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 12px;
+  float: left;
+}
+
+.text-pizza p {
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+/**** Testimonio de clientes ****/
+.references {
+  background: linear-gradient(
+      to right,
+      rgba(41, 40, 40, 0.84),
+      rgba(204, 196, 203, 0.43)
+    ),
+    url("images/background.jpeg");
+  background-attachment: fixed;
+}
+
+.references h2 {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.references h2:after {
+  border-bottom: 2px solid #fdfbf5;
+}
+
+.one-reference {
+  color: white;
+  font-size: 16px;
+}
+
+.one-reference p {
+  font-style: italic;
+}
+
+.photo-name {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.photo-name p {
+  padding: 23px;
+  margin-left: 100px;
+}
+
+.photo-name img {
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+/**** Photo gallery ****/
+.photo-segment li {
+  list-style-type: none;
+  background-color: #000;
+  overflow: hidden;
+  height: 300px;
+}
+.photo-segment img {
+  width: 100%;
+  height: 300px;
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+
+.photo-segment img:hover {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+/**** Contact form ****/
+
+.jq--contact-form {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.contact-form {
+  max-width: 700px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact-form input {
+  width: 80%;
+  margin: 5px 0px;
+  padding: 7px;
+  border: 2px solid #f9ba21;
+  border-radius: 15px;
+  box-shadow: 3px 2px 3px #f9ba21;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea {
+  width: 80%;
+  margin: 5px 0px;
+  padding: 7px;
+  border: 2px solid #f9ba21;
+  border-radius: 15px;
+  box-shadow: 3px 2px 3px #f9ba21;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-submit {
+  background-color: white;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.input-submit:hover {
+  transition: backgrund-color 1.5s;
+  background-color: #872f00;
+  color: #000;
+}
+
+/**** Footer ****/
+.footer-page {
+  background: url(images/background.jpeg);
+  color: #fff;
+}
+
+.social {
+  text-align: center;
+  margin: 10px 0px;
+}
+.social p {
+  display: inline;
+  margin-right: 20px;
+}
+
+.social p a:link,
+.social p a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.social p a:hover,
+.social p a:active {
+  color: #000;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+/**** Stop floating ****/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
